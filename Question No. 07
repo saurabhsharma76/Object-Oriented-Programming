@@ -1,0 +1,12 @@
+''' Write a code that generates palindromic numbers up to n using a generator '''
+
+def generate_palindromic(n):
+
+# Generator of palindromic numbers
+    for i in range(n+1):
+        if str (i)==str (i)[::-1]:
+            yield i
+
+# Example
+for pal in generate_palindromic(n=100):
+    print(pal)
