@@ -1,0 +1,6 @@
+''' What is the difference between print and return statements '''
+
+''' The print statement displays output on the screen but does not store or return a 
+value. The return statement sends a value back from a function, allowing further use 
+in calculations or assignments. print is for immediate output, while return enables 
+function reusability and data manipulation. '''
