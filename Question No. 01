@@ -1,1 +1,5 @@
-print("Hi, Pw Skills")
+''' Explain the importance of Functions.  '''
+
+''' Functions are essential in programming as they promote code reusability, modularity, 
+and readability. They help in breaking complex problems into smaller, manageable parts, 
+making debugging and maintenance easier. '''
