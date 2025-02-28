@@ -1,0 +1,24 @@
+''' Write a code that generates prime numbers up to n using a generator '''
+
+def check_prime(num):
+
+    #Function to check prime number
+    if num < 2:
+        return False
+
+    for i in range(2,int(num**0.5)+1):
+        #check divisibility up to sqrt of num
+        if num%i==0:
+            return False
+    return True
+
+def generate_prime(n):
+
+    #generator to yield prime number up to n
+    for num in range(2,n+1):
+        if check_prime(num):
+            yield num
+
+#example
+for prime in generate_prime(n=50):
+    print(prime)
