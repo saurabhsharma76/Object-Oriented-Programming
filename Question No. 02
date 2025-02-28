@@ -1,0 +1,8 @@
+''' Write a basic function to greet students '''
+
+def greet_student(name):
+    '''Fuction for greeting student'''
+    return f"Hello,{name}! Welcome to the class"
+
+# Example
+print(greet_student('Saurabh'))
