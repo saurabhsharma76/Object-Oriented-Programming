@@ -1,0 +1,13 @@
+''' Write a code that generates powers of two up to n using a generator '''
+
+def power_generator(n):
+
+#Generator of power of to up to n
+    power=1
+    while power<=n:
+        yield power
+        power=power*2 #Multiply by 2 to get next power of two
+
+# Example 
+for power in power_generator(n=100):
+    print(power)
