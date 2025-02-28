@@ -1,0 +1,6 @@
+''' Explain the iterator function '''
+
+''' An iterator function in Python uses __iter__() and __next__() methods to return 
+elements one by one. It retrieves values lazily, saving memory. iter() creates an 
+iterator, and next() fetches the next value. Custom iterators are defined using 
+classes or generators (yield). Iterators are useful for looping efficiently. '''
