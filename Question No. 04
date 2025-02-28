@@ -1,0 +1,6 @@
+''' What are *args and **kwargs '''
+
+''' *args allows a function to accept any number of positional arguments as a tuple, 
+while **kwargs allows it to accept any number of keyword arguments as a dictionary. 
+*args is used for flexible inputs, and **kwargs helps handle named arguments dynamically, 
+making functions more adaptable and reusable. '''
