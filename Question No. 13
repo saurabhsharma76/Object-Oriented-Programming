@@ -1,0 +1,10 @@
+''' Write a code that uses a lambda function to check whether a given number is even 
+or odd '''
+
+#lambda function to check even or odd
+check=lambda x:"Even" if x%2==0 else "Odd"
+
+#example
+num1=7
+result=check(num1)
+print(f"The number {num1} is {result}")
