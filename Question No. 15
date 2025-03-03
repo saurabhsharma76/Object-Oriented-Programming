@@ -1,0 +1,11 @@
+''' Write a code that uses a lambda function to concatenate two strings '''
+
+#lambda function to concatenate
+concat=lambda s1,s2:s1+s2
+
+str1="Hello!"
+str2=" Data Analyst"
+
+concatenate=concat(str1,str2)
+
+print(concatenate)
