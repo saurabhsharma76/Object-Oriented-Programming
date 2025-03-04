@@ -1,0 +1,19 @@
+''' Write a code that filters out prime numbers from a given list '''
+
+def check_prime(n):
+#function to check prime number
+    if n<2:
+        return False
+#check divisibility up to sqrt of n
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+
+def filter(num):
+    #function to filter out prime numbers
+    return [n for n in num if not check_prime(n)]
+
+#example
+num_list=[1,2,3,4,5,6,7,8,9]
+print(filter(num_list))
