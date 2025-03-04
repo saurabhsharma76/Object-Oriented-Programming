@@ -1,0 +1,12 @@
+''' Write a code that uses a lambda function to find the maximum of three given numbers '''
+
+#lambda function to find maximum of three numbers
+maximum=lambda x,y,z: x if (x>y and x>z) else (y if y>z else z)
+
+#example
+num1=453
+num2=435
+num3=819
+
+result=maximum(num1,num2,num3)
+print("Maximum is ",result)
