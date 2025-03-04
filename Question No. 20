@@ -1,0 +1,10 @@
+''' Write a code that calculates the sum of cubes of numbers from a given list '''
+
+def cube_num(num):
+
+    #function for sum of cubes
+    return sum(n**3 for n in num)
+
+#example
+num_list=[4,5,6,7,2]
+print("Sum of cubes: ",cube_num(num_list))
