@@ -1,0 +1,16 @@
+''' Write a code that generates the squares of even numbers from a given list '''
+
+#square generator
+def square_generator(num):
+
+    for n in num:
+        #check even number
+        if n%2==0:
+            #yield squares of even number
+            yield n**2
+
+#example
+num_list=[2,4,6,9,8,3]
+
+for squares in square_generator(num_list):
+    print(squares)
