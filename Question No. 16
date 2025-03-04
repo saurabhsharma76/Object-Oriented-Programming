@@ -1,0 +1,13 @@
+''' Write a code that uses a lambda function to find the maximum of three given numbers '''
+
+#lambda function to find maximum number
+mx=lambda x,y,z:max(x,y,z)
+
+#example
+num1=465
+num2=345
+num3=156
+
+maximum=mx(num1,num2,num3)
+
+print("Maximum is ",maximum)
