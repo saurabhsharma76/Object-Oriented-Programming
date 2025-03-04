@@ -1,0 +1,9 @@
+''' Write a code that uses a lambda function to calculate the square of a given number '''
+
+#lambda function to square
+square_function=lambda x:x**2
+
+#example
+num=5
+result=square_function(num)
+print("Square: ",result)
