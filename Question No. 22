@@ -1,0 +1,10 @@
+''' Write a code that uses a lambda function to calculate the sum of two numbers '''
+
+#lambda function to calculate the sum of two numbers
+sum_num=lambda x,y:x+y
+
+#example
+num1=5
+num2=9
+result=sum_num(num1,num2)
+print("Sum of two numbers: ",result)
