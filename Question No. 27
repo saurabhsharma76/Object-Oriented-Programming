@@ -1,0 +1,7 @@
+''' What is encapsulation in OOP? '''
+
+''' Encapsulation in Object-Oriented Programming (OOP) is the practice of bundling 
+data (variables) and methods (functions) into a single unit (class) while restricting 
+direct access to some details. It enhances data security by using access modifiers 
+like `private`, `protected`, and `public`, allowing controlled interaction with the 
+class. '''
