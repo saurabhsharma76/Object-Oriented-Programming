@@ -1,0 +1,7 @@
+''' Define polymorphism in OOP? '''
+
+''' Polymorphism in Object-Oriented Programming (OOP) allows objects of different 
+classes to be treated as objects of a common superclass. It enables a single interface 
+to represent different underlying data types. This is achieved through method overloading,
+method overriding, and operator overloading, enhancing flexibility and reusability in 
+code design. '''
