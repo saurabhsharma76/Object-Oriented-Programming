@@ -1,0 +1,11 @@
+''' Explain the use of access modifiers in Python classes '''
+
+''' Access modifiers in Python classes control the visibility of class attributes and 
+methods, ensuring encapsulation and data security. Python provides three types:
+
+#Public (public_var) – Accessible from anywhere, inside or outside the class.
+#Protected (_protected_var) – Indicated by a single underscore (_), suggesting that 
+it should not be accessed directly but can be inherited and used in subclasses.
+#Private (__private_var) – Indicated by double underscores (__), restricting direct 
+access outside the class. It undergoes name mangling (_ClassName__private_var), 
+preventing accidental modification. '''
