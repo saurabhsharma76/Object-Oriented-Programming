@@ -1,0 +1,7 @@
+''' What is inheritance in OOP? '''
+
+''' Inheritance in Object-Oriented Programming (OOP) is a mechanism where a child class 
+derives properties and behaviors from a parent class. It promotes code reusability and 
+hierarchy. The child class can inherit, override, or extend functionalities, enabling 
+efficient programming. Python supports single, multiple, multilevel, hierarchical, and 
+hybrid inheritance. '''
