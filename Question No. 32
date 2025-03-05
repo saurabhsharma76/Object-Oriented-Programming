@@ -1,0 +1,20 @@
+''' Define a parent class Animal with a method make_sound that prints "Generic animal sound". Create a
+child class Dog inheriting from Animal with a method make_sound that prints "Woof!" '''
+
+#parent Class
+class Animal:
+    def make_sound(self):
+        print("Generic animal sound")
+
+#child class
+class Dog(Animal):
+    #overriding the parent class 
+    def make_sound(self):
+        print("Woof!")
+
+#example
+animal=Animal()
+animal.make_sound()
+
+dog=Dog()
+dog.make_sound()
