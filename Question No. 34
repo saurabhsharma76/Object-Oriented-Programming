@@ -1,0 +1,33 @@
+''' Create a class Mammal with a method reproduce that prints "Giving birth to live young." 
+Create a class DogMammal inheriting from both Dog and Mammal '''
+
+#parent class 1
+class Animal:
+    def make_sound(self):
+        print("Generic animal sound")
+    def method(self):
+        print("Animal moves")
+
+#parent class 2
+class Mammal:
+    def reproduce(self):
+        print("Giving birth to live young")
+
+#child class inheriting from animal
+class Dog(Animal):
+    #overriding parent class method
+    def method(self):
+        print("Dog runs")
+    #overriding parent class method
+    def make_sound(self):
+        print("Woof!")
+
+#child class inheriting from dog and animal
+class DogMammal(Dog,Mammal):
+    pass
+
+#example
+dog_mammal=DogMammal()
+dog_mammal.method()
+dog_mammal.reproduce()
+dog_mammal.make_sound()
