@@ -1,0 +1,19 @@
+''' Define a method move in the Animal class that prints "Animal moves". Override the 
+move method in the Dog class to print "Dog runs." '''
+
+#parent class
+class Animal:
+    def method(self):
+        print("Animal moves")
+
+#child class
+class Dog(Animal):
+    def method(self):
+        print("Dog runs")
+
+#example
+animal=Animal()
+animal.method()
+
+dog =Dog()
+dog.method()
