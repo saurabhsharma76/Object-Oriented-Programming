@@ -1,0 +1,6 @@
+''' Explain method overriding in Python '''
+
+''' Method overriding in Python allows a child class to provide a specific implementation 
+of a method already defined in its parent class. The overridden method in the child class 
+must have the same name and parameters as in the parent. It enables dynamic method 
+dispatch, supporting polymorphism in OOP. '''
