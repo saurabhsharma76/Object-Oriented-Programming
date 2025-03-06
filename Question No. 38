@@ -1,0 +1,15 @@
+''' Explain the importance of abstraction in object-oriented programming '''
+
+'''Importance of Abstraction in Object-Oriented Programming (OOP):
+Hides Implementation Details – Abstraction allows users to focus on essential features 
+without worrying about underlying complexities.
+Enhances Code Reusability – Developers can create generic abstract classes that multiple 
+subclasses can inherit and implement differently.
+Improves Maintainability – Changes in implementation do not affect the overall program 
+structure, making maintenance easier.
+Encourages Modularity – By separating abstract definitions from concrete implementations,
+code is more structured and modular.
+Ensures Security – Data and implementation details are hidden, preventing unauthorized 
+access and misuse.
+Supports Interface-Based Design – Abstract classes define interfaces that different 
+classes can implement, ensuring consistency in large applications.'''
