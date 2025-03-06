@@ -1,0 +1,25 @@
+''' Define constructors in both the Animal and Dog classes with different initialization 
+parameters '''
+
+''' Constructors (__init__ methods) in Python initialize objects when a class is 
+instantiated.
+
+Animal class constructor initializes name.
+Dog class constructor inherits from Animal and initializes breed.
+super().__init__(name) calls the parent’s constructor, ensuring proper 
+initialization.'''
+
+#example
+class Animal:
+    def __init__(self,name):
+        self.name=name
+        print(f"Animal {name} created")
+
+class Dog(Animal):
+    def __init__(self,name,breed):
+        super().__init__(name)
+        self.breed=breed
+        print(f"Dog {name} of breed {breed} created")
+
+#example
+dog=Dog('Pappy','GermanShepherd')
