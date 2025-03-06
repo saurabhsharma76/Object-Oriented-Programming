@@ -4,3 +4,20 @@
 exposes essential functionalities. It is implemented using abstract classes and abstract 
 methods, provided by the abc module. An abstract class cannot be instantiated and must 
 have at least one abstract method, which subclasses must implement.'''
+
+#implimentation
+
+from abc import ABC,abstractmethod
+
+class animal(ABC):
+    @abstractmethod
+
+    def make_sound(self):
+        pass
+
+class dog(animal):
+    def make_sound(self):
+        print("Woof!")
+
+dg=dog()
+dg.make_sound()
