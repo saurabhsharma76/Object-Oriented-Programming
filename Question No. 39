@@ -1,0 +1,5 @@
+''' How can you achieve abstraction using interfaces in Python? '''
+
+'''In Python, abstraction using interfaces is achieved through abstract classes with only 
+abstract methods. Python does not have built-in interfaces like Java, but abstract classes 
+from the abc module can serve as interfaces.'''
