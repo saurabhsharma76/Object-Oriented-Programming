@@ -1,0 +1,16 @@
+''' Create a class GermanShepherd inheriting from Dog and override the make_sound 
+method to print "Bark! '''
+
+#parent class
+class Dog:
+    def make_sound(self):
+        print("Woof!")
+
+#child class
+class GermanShepherd(Dog):
+    def make_sound(self):
+        print("Bark!")
+
+#example
+gs=GermanShepherd()
+gs.make_sound()
