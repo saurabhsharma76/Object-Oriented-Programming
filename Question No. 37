@@ -1,0 +1,6 @@
+''' What is abstraction in Python? How is it implemented? '''
+
+''' Abstraction in Python is an OOP concept that hides implementation details and only 
+exposes essential functionalities. It is implemented using abstract classes and abstract 
+methods, provided by the abc module. An abstract class cannot be instantiated and must 
+have at least one abstract method, which subclasses must implement.'''
