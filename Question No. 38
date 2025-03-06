@@ -1,0 +1,6 @@
+''' How are abstract methods different from regular methods in Python? '''
+
+''' **Abstract methods** in Python are declared in abstract classes using the `@abstractmethod` 
+decorator from the `abc` module, without implementation. Subclasses must override them. **Regular 
+methods** have complete definitions and can be inherited or overridden optionally. Abstract methods 
+enforce implementation, while regular methods provide direct functionality. '''
