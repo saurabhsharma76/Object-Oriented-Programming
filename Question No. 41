@@ -1,0 +1,53 @@
+'''Can you provide an example of how abstraction can be utilized to create a common interface for a group
+of related classes in Python?'''
+
+from abc import ABC,abstractmethod
+import math
+
+#abstract class
+class shape(ABC):
+    @abstractmethod
+    #abstract method
+    def area(self):
+        pass
+    @abstractmethod
+    #another abstract method
+    def perimeter(self):
+        pass
+
+#circle class implementing shape interface
+class circle(shape):
+    def __init__(self,radius):
+        self.radius=radius
+        return
+
+    def area(self):
+        return math.pi*self.radius**2
+    def perimeter(self):
+        return 2*math.pi*self.radius
+
+#rectangle class implementing shape interface
+class rectangle(shape):
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+
+    def area(self):
+        return self.length*self.width
+    def perimeter(self):
+        return 2*(self.length+self.width)
+
+#example
+crcl=circle(5)
+crcl.area()
+crcl.perimeter()
+
+rc=rectangle(4,5)
+rc.perimeter()
+rc.perimeter()
+
+print("Area of Circle: ",crcl.area())
+print("Perimeter of Circle: ",crcl.perimeter())
+
+print("Area of rectangle: ",rc.area())
+print("Perimeter of rectangle: ",rc.perimeter())
