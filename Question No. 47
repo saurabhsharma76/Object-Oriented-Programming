@@ -1,0 +1,10 @@
+''' How do you achieve encapsulation in Python? '''
+
+''' Encapsulation in Python is achieved by restricting direct access to class 
+attributes and methods, allowing controlled access through getter and setter methods. 
+Python uses access modifiers to define variable visibility:
+
+Public (variable) – Accessible anywhere.
+Protected (_variable) – Suggests internal use; can be accessed but not recommended.
+Private (__variable) – Name-mangled to prevent direct access (_ClassName__variable).
+'''
