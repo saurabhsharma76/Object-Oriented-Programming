@@ -4,3 +4,26 @@
 method that is already defined in its superclass. This is achieved through method 
 overriding, where a subclass redefines a method from the parent class while maintaining 
 the same name and parameters. '''
+
+#example
+
+class Animal:
+    def make_sound(self):
+        print('Generic animal sound')
+
+class Dog(Animal):
+    #overriding the parent class method
+    def make_sound(self):
+        print('Woof!')
+
+class Cat(Animal):
+    #overriding the parent class method
+    def make_sound(self):
+        print('Meow!')
+
+#example
+animals=[Dog(),Cat(),Animal()]
+
+for animal in animals:
+    animal.make_sound()
+
