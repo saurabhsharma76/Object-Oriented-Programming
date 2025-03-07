@@ -1,0 +1,6 @@
+''' How does polymorphism improve code readability and reusability? '''
+
+''' Polymorphism enhances code readability and reusability by allowing different 
+classes to use a common interface while implementing their own specific behavior. 
+This eliminates the need for conditional statements (like if-else) to check object 
+types, making the code cleaner, modular, and easier to maintain. '''
