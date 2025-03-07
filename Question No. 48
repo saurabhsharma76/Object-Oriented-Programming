@@ -1,0 +1,6 @@
+''' Can encapsulation be bypassed in Python? If so, how? '''
+
+''' Yes, encapsulation can be bypassed in Python using name mangling. Private 
+attributes (e.g., __balance) are internally renamed as _ClassName__attribute, 
+allowing direct access.
+'''
