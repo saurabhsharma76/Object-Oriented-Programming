@@ -1,0 +1,29 @@
+''' Develop a Person class with private attributes name and email, and methods to set
+and get the email '''
+
+class Person:
+    def __init__(self,name,email):
+        #private attribute
+        self.__name=name
+        self.__email=email
+
+    #getter method
+    def get_email(self):
+        return self.__email
+    #setter method
+    def set__email(self,new_email):
+        #email validation
+        if "@" in new_email and "." in new_email:
+            self.__email=new_email
+
+            print("Email is updated")
+        else:
+            print("Invalid input")
+
+#example
+person=Person("Saurabh","saurabh@gmail.com")
+#access private email
+print(person.get_email())
+#update email
+person.set__email("ss246719@gmail.com")
+print(person.get_email())
