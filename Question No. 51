@@ -1,0 +1,7 @@
+''' Why is encapsulation considered a pillar of object-oriented programming (OOP)? '''
+
+''' Encapsulation is a pillar of OOP because it hides data, restricting direct access 
+and ensuring data integrity. It provides controlled access through getters and setters, 
+enhancing security, modularity, and maintainability. Encapsulation prevents unintended 
+modifications, enforces abstraction, and promotes code reusability, making software 
+more robust and scalable. '''
