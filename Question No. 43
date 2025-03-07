@@ -1,0 +1,22 @@
+''' Define a base class with a method and a subclass that overrides the method '''
+
+''' In Python, method overriding allows a subclass to redefine a method from the parent 
+class with a different implementation. '''
+
+#example
+#parent class
+class Animal:
+    def make_sound(self):
+        print('Generic animal sound')
+
+#subclass
+class Dog(Animal):
+    #overriding the method
+    def make_sound(self):
+        print('Woof!,Woof!')
+
+animal=Animal()
+dog=Dog()
+
+animal.make_sound()
+dog.make_sound()
