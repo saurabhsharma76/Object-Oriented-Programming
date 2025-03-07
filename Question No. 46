@@ -1,0 +1,10 @@
+''' Describe how Python supports polymorphism with duck typing? '''
+
+''' Python follows the duck typing principle, which means an object's behavior 
+determines its usability, rather than its explicit type. If an object implements a 
+method, Python allows its use without enforcing inheritance or specific types.
+
+Instead of checking an object's class, Python focuses on whether the object has the 
+required method. This allows different objects to be used interchangeably if they 
+provide the same method.
+'''
