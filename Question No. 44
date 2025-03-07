@@ -1,0 +1,27 @@
+''' Define a base class and multiple subclasses with overridden methods? '''
+
+''' In Python, multiple subclasses can override the methods of a base class, providing 
+unique implementations while maintaining the same method signature. '''
+
+class Animal:
+    def make_sound(self):
+        print('Generic animal sound')
+
+class Dog(Animal):
+    def make_sound(self):
+        print('Woof!,Woof!')
+
+class Cat(Animal):
+    def make_sound(self):
+        print('Meow!')
+
+class Cow(Animal):
+    def make_sound(self):
+        print('Moo!,Moo!')
+
+animals=[Dog(),Cat(),Cow(),Animal()]
+
+for animal in animals:
+    animal.make_sound()
+
+
