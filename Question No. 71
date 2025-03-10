@@ -1,0 +1,46 @@
+''' How does encapsulation relate to property decorators in Python? Provide an example
+showcasing encapsulation using property decorators '''
+
+''' Encapsulation is a fundamental concept in object-oriented programming (OOP) that 
+restricts direct access to an object's attributes, ensuring controlled data modification.
+
+Python achieves encapsulation using private attributes (_attribute or __attribute) 
+and property decorators (@property, @setter, @deleter). Property decorators allow 
+safe reading, updating, and deleting of private attributes without exposing them directly.'''
+
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        #private attribute
+        self._balance = balance
+
+    @property
+    def balance(self):
+        #getter method to access balance
+        return self._balance
+
+    @balance.setter
+    def balance(self, amount):
+        #setter method with validation to update balance
+        if amount < 0:
+            raise ValueError("Balance cannot be negative!")
+        self._balance = amount
+
+    @balance.deleter
+    def balance(self):
+        #deleter method to remove balance safely
+        print("Deleting balance information...")
+        del self._balance
+
+#creating an instance
+account = BankAccount("Alice", 1000)
+
+#accessing balance using the getter
+print(account.balance)
+
+#updating balance using the setter
+account.balance = 1500
+print(account.balance)
+
+#deleting balance attribute
+del account.balance  
