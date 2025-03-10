@@ -1,0 +1,15 @@
+''' Create a Python class `Circle` with a class method `calculate_area` that calculates 
+the area of a circle given its radius '''
+
+import math
+
+class Circle:
+    @classmethod
+    def calculate_area(cls, radius):
+        #return the area
+        return math.pi * radius ** 2
+
+#example usage
+radius = 5
+area = Circle.calculate_area(radius)
+print(f"Area of Circle with radius {radius}: {area:.2f}") 
