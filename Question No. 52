@@ -1,0 +1,20 @@
+''' Create a decorator in Python that adds functionality to a simple function by printing a message before
+and after the function execution '''
+
+#decorator function
+def my_decorator(func):
+    def wrapper():
+        #message before function
+        print("Before the function")
+        func()
+        #message after function
+        print("After the function")
+    return wrapper()
+
+#apply decorator to a simple function
+@my_decorator
+def say_hello():
+    print("Hello! World")
+
+#call the decorator function
+say_hello()
