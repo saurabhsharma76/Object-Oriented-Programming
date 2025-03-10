@@ -1,0 +1,25 @@
+''' Explain the usage of the __add__() method in Python classes. Provide an example '''
+
+''' The __add__() method is a special (dunder) method that overloads the + operator in 
+Python. When you use object1 + object2, Python internally calls object1.__add__(object2). 
+This allows custom classes to define addition behavior. '''
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        #defines how two objects are added
+        return Point(self.x + other.x, self.y + other.y)
+
+    def __str__(self):
+        return f"Point({self.x}, {self.y})"
+
+#creating two Point objects
+p1 = Point(2, 3)
+p2 = Point(4, 5)
+
+#using the + operator
+result = p1 + p2
+print(result)
