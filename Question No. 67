@@ -1,0 +1,26 @@
+''' What is the purpose of a getter method in Python? Provide an example demonstrating
+the use of a getter method using property decorators '''
+
+''' A getter method is used to retrieve the value of a private attribute in a 
+controlled manner. It helps enforce encapsulation by restricting direct access to 
+attributes while allowing validation or modification before returning the value.
+In Python, property decorators (@property) can be used to define getter methods.
+'''
+
+class Person:
+    def __init__(self, name, age):
+        #private attribute
+        self._name = name  
+        self._age = age    
+
+    @property
+    def age(self):
+        #getter method for age
+        #returns the private attribute
+        return self._age  
+
+#creating an instance
+p = Person("Alice", 25)
+
+#a age using the getter method
+print(p.age)  
