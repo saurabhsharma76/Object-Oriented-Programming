@@ -1,0 +1,15 @@
+''' What is the purpose of the __str__() method in Python classes? Provide an example '''
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"Person(Name: {self.name}, Age: {self.age})"
+
+#creating an instance
+p = Person("Saurabh", 26)
+
+#printing the object
+print(p)
