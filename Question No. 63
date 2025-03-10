@@ -1,0 +1,20 @@
+''' How does the __len__() method work in Python? Provide an example '''
+
+''' The __len__() method is a special method used to define the behavior of len() 
+for an object. When you call len(object), Python internally calls object.__len__() 
+to return the length of the object. '''
+
+class Book:
+    def __init__(self, title, pages):
+        self.title = title
+        self.pages = pages
+
+    def __len__(self):
+        #return the number of pages in lenght
+        return self.pages  
+
+#creating an instance
+b = Book("Python Basics", 350)
+
+#using len() on the object
+print(len(b)) 
