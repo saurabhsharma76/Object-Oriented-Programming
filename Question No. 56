@@ -1,0 +1,26 @@
+''' Create a decorator that preserves the metadata of the original function '''
+import functools
+
+#decorator
+def preserve_metadata_decorator(func):
+    # Preserves metadata of func
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        print(f"Executing '{func.__name__}' function...")
+        result = func(*args, **kwargs)
+        print(f"Function '{func.__name__}' execution completed.")
+        return result
+    return wrapper
+
+#decorator to a function
+@preserve_metadata_decorator
+def greet(name):
+    """Greets a person by name."""
+    print(f"Hello, {name}!")
+
+# Check function metadata
+print(greet.__name__)
+print(greet.__doc__)
+
+#call the decorated function
+greet("Alice")
