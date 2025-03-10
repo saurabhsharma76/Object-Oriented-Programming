@@ -1,0 +1,43 @@
+''' Explain the use of the @deleter decorator in Python property decorators. Provide
+a code example demonstrating its application '''
+
+''' The @property decorator allows controlled access to attributes, and the @deleter 
+decorator (@property_name.deleter) is used to define behavior when deleting an attribute. 
+It ensures that an attribute is deleted safely and with additional logic, rather than 
+allowing direct removal. '''
+
+class Person:
+    def __init__(self, name, age):
+        #private attribute
+        self._name = name
+        self._age = age
+
+    @property
+    def age(self):
+        #getter method for age
+        return self._age
+
+    @age.setter
+    def age(self, new_age):
+        #setter method with validation
+        if new_age < 0:
+            raise ValueError("Age cannot be negative!")
+        self._age = new_age
+
+    @age.deleter
+    def age(self):
+        #deleter method to remove age safely
+        print("Deleting age attribute...")
+        #actually deletes the attribute
+        del self._age
+
+#creating an instance
+p = Person("Alice", 25)
+
+#accessing and modifying age
+print(p.age)
+p.age = 30
+print(p.age)
+
+#deleting the age attribute
+del p.age
