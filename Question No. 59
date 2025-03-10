@@ -1,0 +1,12 @@
+''' Create a Python class `StringFormatter` with a static method `reverse_string` that takes a string as input
+and returns its reverse '''
+
+class StringFormatter:
+    @staticmethod
+    def reverse_string(s):
+        #return the revers
+        return s[::-1]
+
+#example usage
+result = StringFormatter.reverse_string("Hello")
+print("Reversed String:", result)  
