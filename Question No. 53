@@ -1,0 +1,22 @@
+''' Modify the decorator to accept arguments and print the function name along with the message '''
+
+#decorator function
+def message_decorator(func):
+    #accept arguments
+    def wrapper(*args,**kwargs):
+        #function name before execution
+        print(f"Execute '{func.__name__}' function")
+        #original function
+        result=func(*args,**kwargs)
+        #functin name after execution
+        print(f"Function '{func.__name__}' execution complete")
+
+        return result
+    return wrapper
+
+#decorator to a function with argument
+@message_decorator
+def greet(name):
+    print(f"Hello! {name}")
+#call the decorator function
+greet('Saurabh')
