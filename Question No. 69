@@ -1,0 +1,31 @@
+''' What is the purpose of the @property decorator in Python? Provide an example
+illustrating its usage '''
+
+''' The @property decorator is used to define getter methods in a Pythonic way, 
+allowing attribute access without parentheses while maintaining encapsulation. It 
+makes a method behave like an attribute, enhancing readability and control. '''
+
+class Circle:
+    def __init__(self, radius):
+        #private attribute
+        self._radius = radius
+
+    @property
+    def radius(self):
+        #getter method to access radius
+        return self._radius
+
+    @property
+    def area(self):
+        #computed property for area
+        #calculates area 
+        return 3.1416 * self._radius ** 2
+
+#creating an instance
+c = Circle(5)
+
+#accessing radius like an attribute
+print(c.radius)
+
+#accessing area
+print(c.area)
