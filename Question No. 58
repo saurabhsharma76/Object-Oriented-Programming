@@ -1,0 +1,24 @@
+''' Create a Python class `Employee` with a class `method get_employee_count` that 
+returns the total number of employees created '''
+
+class Employee:
+    #class variable
+    employee_count = 0
+
+    def __init__(self, name):
+        self.name = name
+        #count for new employee
+        Employee.employee_count += 1
+
+    @classmethod
+    def get_employee_count(cls):
+        #return the total number of employee
+        return cls.employee_count
+
+#creating employee
+emp1 = Employee("Alice")
+emp2 = Employee("Bob")
+emp3 = Employee("Charlie")
+
+#total number of employees
+print("Total Employees:", Employee.get_employee_count())
