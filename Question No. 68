@@ -1,0 +1,37 @@
+''' Explain the role of setter methods in Python. Demonstrate how to use a setter
+method to modify a class attribute using property decorators '''
+
+''' A setter method is used to modify a private attribute in a controlled way. It 
+ensures encapsulation, allowing validation before assigning a new value to an attribute.
+
+In Python, setter methods are commonly implemented using property decorators (@property 
+and @attribute_name.setter).'''
+
+class Person:
+    def __init__(self, name, age):
+        #private attribute
+        self._name = name
+        self._age = age
+
+    @property
+    def age(self):
+        #getter method for age
+        return self._age
+
+    @age.setter
+    def age(self, new_age):
+        #setter method with validation
+        if new_age < 0:
+            raise ValueError("Age cannot be negative!")
+        #assign new value if valid
+        self._age = new_age
+
+#creating an instance
+p = Person("Alice", 25)
+
+#modifying age using the setter method
+p.age = 30
+print(p.age) 
+
+# Trying to set a negative age (raises an error)
+# p.age = -5  # Uncommenting this will raise ValueError
