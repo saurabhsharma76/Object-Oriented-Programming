@@ -1,0 +1,12 @@
+''' Create a Python class `Calculator` with a static method `add` that takes in two
+numbers and returns their sum '''
+
+class Calculator:
+    @staticmethod
+    def add(a, b):
+        #return the sum of two numbers
+        return a + b
+
+#example
+result = Calculator.add(5, 7)
+print("Sum:", result) 
