@@ -1,0 +1,29 @@
+''' Modify the decorator to accept and pass function arguments to the wrapped function '''
+
+#first decorator
+def decorator_one(func):
+    def wrapper(*args,**kwargs):
+        print("Decorator one: before execution ")
+        result=func(*args,**kwargs)
+        print("Decorator one: After execution")
+        return result
+    return wrapper
+
+#second decorator
+def decorator_two(func):
+    def wrapper(*args,**kwargs):
+        print("Decorator Two: before execution")
+        result=func(*args,**kwargs)
+        print("Decorator two: after execution")
+        return result
+    return wrapper
+
+#apply decorators
+@decorator_one
+@decorator_two
+
+def greet(name,age):
+    print(f"Hello!, {name}, You are {age}")
+
+#call decorator function
+greet("Saurabh",26)
