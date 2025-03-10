@@ -1,0 +1,32 @@
+''' Explain the usage of the __iter__() and __next__() methods in Python. Provide
+an example using iterators '''
+
+''' The __iter__() and __next__() methods are used to create iterators in Python.
+
+__iter__() returns the iterator object itself.
+__next__() returns the next value in the iteration and raises StopIteration when 
+no more elements are left.'''
+
+class CountDown:
+    def __init__(self, start):
+        self.current = start
+
+    def __iter__(self):
+        #returns the interator objects itself
+        return self
+
+    def __next__(self):
+        #returns the next number in countdown and stops at 0.
+        if self.current <= 0:
+            #stop iteration when 0 is reached
+            raise StopIteration
+        value = self.current
+        self.current -= 1
+        return value
+
+#creating an iterator object
+count = CountDown(5)
+
+#iterating using a for loop
+for num in count:
+    print(num)
